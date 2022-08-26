@@ -89,22 +89,56 @@ body
   color: #E7F6F2;
 
   background: #395B64;
+
+  cursor: pointer;
+}
+
+#root .parentElementsBox .myForm button:hover
+{
+  background: #4d737e;
 }
 
 ul
 {
-  overflow-y: auto;
   width: 300px;
   height: 200px;
   padding: 50px;
+
+  overflow-y: auto;
+  
 }
 li
 {
-  margin-bottom: 5px;
+  width: 100%;
+  margin-bottom: 20px;
 
   font-weight: 300;
   letter-spacing: 3px;
   color: #E7F6F2;
 
   list-style: disc;
+
+  position: relative;
+}
+
+li button
+{
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+
+  color: #fff;
+
+  position: absolute;
+  right: 0;
+
+  background:rgba(0, 0, 0, 0.8);
+
+  cursor: pointer;
+
+}
+
+li button:hover
+{
+  background: rgba(27, 27, 27, 0.8);
 }

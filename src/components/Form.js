@@ -14,9 +14,11 @@ function Form({listItem, setListItem}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setListItem((lis) => [...lis, userItem]);
+        if (userItem !== '') {
+            setListItem((lis) => [...lis, userItem]);
 
-        console.log(listItem);
+            console.log(listItem);
+        }
         setUserItem('');
     }
   return (

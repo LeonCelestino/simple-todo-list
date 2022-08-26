@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="parentElementsBox">
       <Form listItem={listItem} setListItem={setListItem}/>
-      <List listItem={listItem}/>
+      <List listItem={listItem} setListItem={setListItem}/>
     </div>
   )
 }
