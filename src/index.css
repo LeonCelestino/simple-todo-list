@@ -1,13 +1,110 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,500&display=swap');
+
+*
+{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body
+{
+  background: #2C3333;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+#root
+{
+  width: 100%;
+  height: 100vh;
+
+}
+
+#root .parentElementsBox
+{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+ 
+}
+
+#root .parentElementsBox .myForm
+{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+  width: 50%;
+
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+#root .parentElementsBox .myForm label
+{
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #E7F6F2;
+}
+
+#root .parentElementsBox .myForm input[type="text"] 
+{
+  width: 40%;
+
+  padding: 0.5em;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+
+  text-align: center;
+  letter-spacing: 2px;
+  color: #E7F6F2;
+
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#root .parentElementsBox .myForm input[type="text"]:focus
+{
+  outline: none;
+}
+
+
+#root .parentElementsBox .myForm button
+{
+  border: none;
+    border-radius: 5px;
+  padding: 0.3em 5em;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #E7F6F2;
+
+  background: #395B64;
+}
+
+ul
+{
+  overflow-y: auto;
+  width: 300px;
+  height: 200px;
+  padding: 50px;
+}
+li
+{
+  margin-bottom: 5px;
+
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #E7F6F2;
+
+  list-style: disc;
 }
